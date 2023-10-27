@@ -9,7 +9,7 @@ class CreateHomes < ActiveRecord::Migration[7.0]
       t.integer :floors
       t.boolean :availability
       t.string :address
-      t.decimal :price
+      t.decimal :price, scale: 2, precision: 9
 
       t.timestamps
     end
